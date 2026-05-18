@@ -1,399 +1,220 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ranila Garcia Portfolio</title>
-
-  <style>
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-      font-family: Arial, sans-serif;
-    }
-
-    body{
-      background:#0b0f0c;
-      color:white;
-      line-height:1.6;
-    }
-
-    header{
-      min-height:100vh;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      padding:40px;
-      background:linear-gradient(to right,#08120b,#0d1d12);
-    }
-
-    .hero{
-      max-width:1200px;
-      width:100%;
-      display:grid;
-      grid-template-columns:1fr 1fr;
-      gap:50px;
-      align-items:center;
-    }
-
-    .hero-text h4{
-      color:#86c26b;
-      letter-spacing:4px;
-      margin-bottom:20px;
-    }
-
-    .hero-text h1{
-      font-size:70px;
-      line-height:1.1;
-      margin-bottom:20px;
-    }
-
-    .hero-text span{
-      color:#86c26b;
-    }
-
-    .hero-text p{
-      color:#cfcfcf;
-      margin-bottom:30px;
-      font-size:18px;
-    }
-
-    .buttons{
-      display:flex;
-      gap:20px;
-      flex-wrap:wrap;
-    }
-
-    .btn{
-      padding:15px 35px;
-      border:none;
-      border-radius:12px;
-      font-size:16px;
-      cursor:pointer;
-      transition:0.3s;
-    }
-
-    .btn-primary{
-      background:#86c26b;
-      color:black;
-      font-weight:bold;
-    }
-
-    .btn-primary:hover{
-      background:#9dd680;
-    }
-
-    .btn-outline{
-      background:transparent;
-      border:1px solid #86c26b;
-      color:white;
-    }
-
-    .hero-card{
-      background:#111814;
-      border:1px solid #1f2a23;
-      border-radius:30px;
-      padding:50px;
-      text-align:center;
-    }
-
-    .hero-card img{
-      width:180px;
-      height:180px;
-      border-radius:50%;
-      object-fit:cover;
-      margin-bottom:20px;
-      border:5px solid #86c26b;
-    }
-
-    section{
-      padding:100px 40px;
-    }
-
-    .container{
-      max-width:1200px;
-      margin:auto;
-    }
-
-    .title{
-      text-align:center;
-      margin-bottom:60px;
-    }
-
-    .title h2{
-      font-size:50px;
-      margin-bottom:10px;
-    }
-
-    .title p{
-      color:#86c26b;
-      letter-spacing:3px;
-    }
-
-    .services{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-      gap:30px;
-    }
-
-    .card{
-      background:#111814;
-      padding:40px;
-      border-radius:25px;
-      border:1px solid #1f2a23;
-      transition:0.3s;
-    }
-
-    .card:hover{
-      transform:translateY(-10px);
-      border-color:#86c26b;
-    }
-
-    .card h3{
-      margin:20px 0;
-      font-size:28px;
-    }
-
-    .card p{
-      color:#cfcfcf;
-    }
-
-    .skills{
-      display:flex;
-      flex-wrap:wrap;
-      justify-content:center;
-      gap:20px;
-    }
-
-    .skill{
-      background:#111814;
-      padding:15px 25px;
-      border-radius:15px;
-      border:1px solid #1f2a23;
-    }
-
-    .about{
-      display:grid;
-      grid-template-columns:1fr 1fr;
-      gap:50px;
-      align-items:center;
-    }
-
-    .about img{
-      width:100%;
-      border-radius:30px;
-    }
-
-    footer{
-      padding:40px;
-      text-align:center;
-      border-top:1px solid #1f2a23;
-      color:#cfcfcf;
-    }
-
-    @media(max-width:900px){
-
-      .hero{
-        grid-template-columns:1fr;
-      }
-
-      .about{
-        grid-template-columns:1fr;
-      }
-
-      .hero-text h1{
-        font-size:50px;
-      }
-
-    }
-
-  </style>
-</head>
-
-<body>
-
-<header>
-
-  <div class="hero">
-
-    <div class="hero-text">
-
-      <h4>VIRTUAL ASSISTANT • CRM MANAGER</h4>
-
-      <h1>
-        Hi, I'm <span>Ranila Garcia</span>
-      </h1>
-
-      <p>
-        I help businesses stay organized through customer support,
-        bookkeeping, CRM management, scheduling,
-        and administrative support.
-      </p>
-
-      <div class="buttons">
-
-        <button class="btn btn-primary">
-          Hire Me
-        </button>
-
-        <button class="btn btn-outline">
-          My Portfolio
-        </button>
-
-      </div>
-
-    </div>
-
-    <div class="hero-card">
-
-   <img src="image.jpg" alt="profile">
-
-      <h2>Ranila Garcia</h2>
-
-      <p>
-        Virtual Assistant • Bookkeeper • Customer Support
-      </p>
-
-    </div>
-
-  </div>
-
-</header>
-
-<section>
-
-  <div class="container">
-
-    <div class="title">
-
-      <p>MY SERVICES</p>
-
-      <h2>What I Can Do</h2>
-
-    </div>
-
-    <div class="services">
-
-      <div class="card">
-
-        <h3>📋 Virtual Assistance</h3>
-
-        <p>
-          Administrative tasks, scheduling,
-          calendar management, and organization.
+export default function PortfolioWebsite() {
+  return (
+    <div className="min-h-screen bg-black text-white font-sans overflow-hidden">
+      {/* Background Effects */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_rgba(34,197,94,0.15),transparent_35%)]"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,_rgba(16,185,129,0.12),transparent_35%)]"></div>
+
+      {/* Hero Section */}
+      <section className="relative max-w-7xl mx-auto px-6 py-24 grid lg:grid-cols-2 gap-14 items-center">
+        <div>
+          <div className="inline-block px-5 py-2 rounded-full bg-green-500/10 border border-green-500/30 text-green-400 mb-6 text-sm tracking-widest uppercase">
+            Available for Remote Work
+          </div>
+
+          <h1 className="text-6xl lg:text-7xl font-black leading-tight mb-6">
+            Virtual Assistant
+            <span className="block text-green-400">That Helps</span>
+            Businesses Grow.
+          </h1>
+
+          <p className="text-xl text-slate-300 leading-relaxed mb-10 max-w-2xl">
+            Hi! I'm <span className="text-white font-semibold">Ranila Garcia</span> — a reliable Virtual Assistant, Bookkeeper, and GoHighLevel CRM Manager helping businesses stay organized through customer support, CRM workflows, scheduling, and administrative support.
+          </p>
+
+          <div className="flex flex-wrap gap-5">
+            <button className="px-8 py-4 rounded-2xl bg-green-500 hover:bg-green-400 transition text-black font-bold shadow-2xl shadow-green-500/20">
+              Hire Me
+            </button>
+
+            <button className="px-8 py-4 rounded-2xl border border-slate-700 hover:border-green-400 transition font-semibold">
+              Download Resume
+            </button>
+          </div>
+
+          <div className="flex gap-10 mt-14 flex-wrap">
+            <div>
+              <h3 className="text-4xl font-black text-green-400">2+</h3>
+              <p className="text-slate-400">Years Admin Experience</p>
+            </div>
+
+            <div>
+              <h3 className="text-4xl font-black text-green-400">100%</h3>
+              <p className="text-slate-400">Committed Support</p>
+            </div>
+
+            <div>
+              <h3 className="text-4xl font-black text-green-400">24/7</h3>
+              <p className="text-slate-400">Client Communication</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Right Side */}
+        <div className="relative flex justify-center">
+          <div className="absolute w-96 h-96 bg-green-500/20 blur-3xl rounded-full"></div>
+
+          <div className="relative bg-gradient-to-br from-slate-900 to-slate-800 border border-slate-700 rounded-[40px] p-10 shadow-2xl w-full max-w-md">
+            <div className="w-40 h-40 mx-auto rounded-full bg-gradient-to-br from-green-400 to-emerald-600 flex items-center justify-center text-6xl shadow-2xl mb-8">
+              👩‍💻
+            </div>
+
+            <h2 className="text-3xl font-bold text-center mb-3">
+              Ranila Garcia
+            </h2>
+
+            <p className="text-center text-green-400 mb-8 font-medium">
+              VA • Bookkeeper • CRM Manager
+            </p>
+
+            <div className="space-y-4 text-slate-300">
+              <div className="flex items-center justify-between border-b border-slate-700 pb-3">
+                <span>CRM Management</span>
+                <span>⚡</span>
+              </div>
+
+              <div className="flex items-center justify-between border-b border-slate-700 pb-3">
+                <span>Customer Support</span>
+                <span>💬</span>
+              </div>
+
+              <div className="flex items-center justify-between border-b border-slate-700 pb-3">
+                <span>Bookkeeping</span>
+                <span>📊</span>
+              </div>
+
+              <div className="flex items-center justify-between">
+                <span>Administrative Tasks</span>
+                <span>📋</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Services */}
+      <section className="relative max-w-7xl mx-auto px-6 py-24">
+        <div className="text-center mb-16">
+          <p className="text-green-400 uppercase tracking-[0.3em] mb-4">
+            My Expertise
+          </p>
+
+          <h2 className="text-5xl font-black mb-5">
+            Services I Offer
+          </h2>
+
+          <p className="text-slate-400 max-w-2xl mx-auto text-lg">
+            Helping businesses stay efficient, organized, and customer-focused.
+          </p>
+        </div>
+
+        <div className="grid lg:grid-cols-3 gap-8">
+          {[
+            {
+              title: 'Virtual Assistance',
+              icon: '📋',
+              desc: 'Administrative support, calendar management, email handling, scheduling, and organization.'
+            },
+            {
+              title: 'GoHighLevel CRM',
+              icon: '⚙️',
+              desc: 'Lead tracking, follow-ups, pipeline organization, customer workflows, and automations.'
+            },
+            {
+              title: 'Bookkeeping Support',
+              icon: '📊',
+              desc: 'QuickBooks support, spreadsheets, financial organization, and accurate data entry.'
+            }
+          ].map((item, index) => (
+            <div
+              key={index}
+              className="group bg-gradient-to-b from-slate-900 to-slate-800 border border-slate-800 hover:border-green-500/40 rounded-[32px] p-10 transition duration-300 hover:-translate-y-2 shadow-2xl"
+            >
+              <div className="text-6xl mb-8">{item.icon}</div>
+
+              <h3 className="text-3xl font-bold mb-5 group-hover:text-green-400 transition">
+                {item.title}
+              </h3>
+
+              <p className="text-slate-400 leading-relaxed text-lg">
+                {item.desc}
+              </p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Skills */}
+      <section className="bg-slate-950 border-y border-slate-800 py-24 px-6">
+        <div className="max-w-6xl mx-auto text-center">
+          <p className="text-green-400 uppercase tracking-[0.3em] mb-4">
+            Tools & Platforms
+          </p>
+
+          <h2 className="text-5xl font-black mb-14">
+            Skills & Software
+          </h2>
+
+          <div className="flex flex-wrap justify-center gap-5">
+            {[
+              'GoHighLevel',
+              'QuickBooks',
+              'Microsoft Excel',
+              'Google Sheets',
+              'Customer Support',
+              'Calendar Management',
+              'Appointment Scheduling',
+              'Data Entry',
+              'Email Management',
+              'Google Workspace',
+              'Social Media Assistance',
+              'Administrative Support'
+            ].map((skill, index) => (
+              <div
+                key={index}
+                className="px-6 py-4 rounded-2xl border border-slate-700 bg-slate-900 hover:border-green-400 hover:text-green-400 transition text-lg"
+              >
+                {skill}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="relative max-w-5xl mx-auto px-6 py-28 text-center">
+        <div className="absolute inset-0 bg-gradient-to-r from-green-500/10 to-emerald-500/10 blur-3xl rounded-full"></div>
+
+        <div className="relative bg-gradient-to-br from-green-500 to-emerald-600 rounded-[40px] p-14 shadow-2xl">
+          <h2 className="text-5xl font-black text-black mb-6">
+            Ready To Work Together?
+          </h2>
+
+          <p className="text-black/80 text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
+            I am available for part-time, full-time, and long-term remote work.
+            Let's help your business stay organized and grow faster.
+          </p>
+
+          <button className="bg-black text-white px-10 py-5 rounded-2xl text-lg font-bold hover:scale-105 transition">
+            Contact Me
+          </button>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="border-t border-slate-800 py-12 text-center text-slate-500">
+        <h3 className="text-3xl font-bold text-white mb-4">
+          Ranila Garcia
+        </h3>
+
+        <p className="text-lg mb-2">
+          Virtual Assistant • GoHighLevel CRM • Bookkeeping Support
         </p>
 
-      </div>
-
-      <div class="card">
-
-        <h3>⚙️ CRM Management</h3>
-
         <p>
-          GoHighLevel CRM setup,
-          lead follow-ups,
-          pipelines, and automations.
+          Cebu, Philippines
         </p>
-
-      </div>
-
-      <div class="card">
-
-        <h3>📊 Bookkeeping</h3>
-
-        <p>
-          QuickBooks support,
-          spreadsheets,
-          invoicing, and financial records.
-        </p>
-
-      </div>
-
+      </footer>
     </div>
-
-  </div>
-
-</section>
-
-<section>
-
-  <div class="container">
-
-    <div class="title">
-
-      <p>TOOLS & SKILLS</p>
-
-      <h2>Software Expertise</h2>
-
-    </div>
-
-    <div class="skills">
-
-      <div class="skill">GoHighLevel</div>
-      <div class="skill">QuickBooks</div>
-      <div class="skill">Microsoft Excel</div>
-      <div class="skill">Google Sheets</div>
-      <div class="skill">Customer Support</div>
-      <div class="skill">Appointment Scheduling</div>
-      <div class="skill">Data Entry</div>
-      <div class="skill">Google Workspace</div>
-
-    </div>
-
-  </div>
-
-</section>
-
-<section>
-
-  <div class="container about">
-
-    <div>
-
-      <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1200&auto=format&fit=crop" alt="work">
-
-    </div>
-
-    <div>
-
-      <div class="title" style="text-align:left">
-
-        <p>ABOUT ME</p>
-
-        <h2>Why Work With Me?</h2>
-
-      </div>
-
-      <p style="color:#cfcfcf; margin-bottom:20px;">
-        I am a reliable and detail-oriented Virtual Assistant
-        with experience in customer support,
-        bookkeeping, CRM management,
-        and administrative assistance.
-      </p>
-
-      <p style="color:#cfcfcf;">
-        I am an IT graduate,
-        fast learner,
-        organized,
-        and committed to helping businesses grow.
-      </p>
-
-    </div>
-
-  </div>
-
-</section>
-
-<footer>
-
-  <h2>Ranila Garcia</h2>
-
-  <p>
-    Virtual Assistant • CRM Manager • Bookkeeping Support
-  </p>
-
-</footer>
-
-</body>
-</html>
+  )
+}

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -17,7 +18,7 @@
 }
 
 body{
-  background:#fffafc;
+  background:#fff9fc;
   color:#333;
   overflow-x:hidden;
 }
@@ -30,7 +31,7 @@ header{
   justify-content:center;
   align-items:center;
   padding:40px;
-  background:linear-gradient(135deg,#fff1f6,#ffe8ef,#f9f0ff);
+  background:linear-gradient(135deg,#fff1f7,#ffe8f0,#f7f0ff);
 }
 
 .hero{
@@ -50,7 +51,7 @@ header{
 }
 
 .hero-text h1{
-  font-size:80px;
+  font-size:75px;
   line-height:1.1;
   margin-bottom:25px;
   color:#1f1f1f;
@@ -285,13 +286,13 @@ footer p{
 
 @media(max-width:900px){
 
-  .hero{
-    grid-template-columns:1fr;
-  }
+.hero{
+  grid-template-columns:1fr;
+}
 
-  .hero-text h1{
-    font-size:55px;
-  }
+.hero-text h1{
+  font-size:50px;
+}
 
 }
 
@@ -305,22 +306,9 @@ footer p{
 
 <header>
 
-<div class="services">
+<div class="hero">
 
-  <div class="card work-card">
-
-    <img
-      src="sample.jpg"
-      alt="Sample Works"
-      style="
-        width:100%;
-        border-radius:25px;
-      "
-    >
-
-  </div>
-
-</div>
+<div class="hero-text">
 
 <h4>VIRTUAL ASSISTANT • BOOKKEEPER • CRM MANAGER</h4>
 
@@ -330,8 +318,8 @@ Hi, I'm <span>Ranila Garcia</span>
 
 <p>
 Helping businesses stay organized through customer support,
-bookkeeping, CRM workflows, scheduling,
-and administrative assistance.
+bookkeeping, CRM workflows,
+scheduling, and administrative assistance.
 </p>
 
 <div class="buttons">
@@ -369,7 +357,7 @@ Download Resume
 
 <div class="hero-card">
 
-<!-- CHANGE THIS IMAGE -->
+<!-- CHANGE THIS -->
 
 <img src="image.jpg" alt="profile">
 
@@ -403,12 +391,12 @@ Virtual Assistant • Bookkeeper • CRM Manager
 
 <div class="card">
 
-<h3>📋 Virtual Assistant</h3>
+<h3>📋 Virtual Assistance</h3>
 
 <p>
 Administrative support,
-email management,
-calendar scheduling,
+calendar management,
+email handling,
 and customer coordination.
 </p>
 
@@ -420,9 +408,9 @@ and customer coordination.
 
 <p>
 QuickBooks support,
-expense tracking,
-spreadsheets,
-and invoicing management.
+financial tracking,
+expense monitoring,
+and spreadsheets.
 </p>
 
 </div>
@@ -434,7 +422,7 @@ and invoicing management.
 <p>
 GoHighLevel CRM setup,
 pipeline management,
-automation workflows,
+automations,
 and lead follow-ups.
 </p>
 
@@ -446,7 +434,7 @@ and lead follow-ups.
 
 </section>
 
-<!-- SAMPLE WORK -->
+<!-- SAMPLE WORKS -->
 
 <section>
 
@@ -462,49 +450,52 @@ and lead follow-ups.
 
 <div class="services">
 
+<!-- VA -->
+
 <div class="card work-card">
 
-<!-- CHANGE IMAGE -->
-<img src="sample1.jpg" alt="sample">
+<img src="Virtual.jpg" alt="Virtual Assistant">
 
 <h3>📋 Virtual Assistant</h3>
 
 <p>
-Daily task management,
-email handling,
+Managed daily tasks,
+emails,
 calendar scheduling,
 and admin support.
 </p>
 
 </div>
 
+<!-- BOOKKEEPING -->
+
 <div class="card work-card">
 
-<!-- CHANGE IMAGE -->
-<img src="sample2.jpg" alt="sample">
+<img src="Bookkeeping.jpg" alt="Bookkeeping">
 
 <h3>📊 Bookkeeping</h3>
 
 <p>
-Financial reports,
-QuickBooks management,
-expense tracking,
-and spreadsheets.
+Prepared reports,
+tracked expenses,
+organized spreadsheets,
+and maintained records.
 </p>
 
 </div>
 
+<!-- CRM -->
+
 <div class="card work-card">
 
-<!-- CHANGE IMAGE -->
-<img src="sample3.jpg" alt="sample">
+<img src="CRM.jpg" alt="CRM Management">
 
 <h3>⚙️ CRM Management</h3>
 
 <p>
-CRM pipeline setup,
+Managed CRM pipelines,
 customer workflows,
-lead tracking,
+lead follow-ups,
 and automations.
 </p>
 
@@ -537,8 +528,8 @@ and automations.
 <div class="skill">Microsoft Excel</div>
 <div class="skill">Google Sheets</div>
 <div class="skill">Canva</div>
-<div class="skill">Google Workspace</div>
 <div class="skill">Customer Support</div>
+<div class="skill">Google Workspace</div>
 <div class="skill">Data Entry</div>
 
 </div>
@@ -555,17 +546,33 @@ and automations.
 
 <div class="contact-box">
 
-<h2>Let's Work Together</h2>
+<h2>Contact Me</h2>
 
 <p>
-I am available for part-time,
+Available for remote work,
+part-time,
 full-time,
-and long-term remote work.
+and long-term projects.
 </p>
 
-<button class="btn btn-primary">
-Contact Me
-</button>
+<div style="
+display:flex;
+flex-direction:column;
+gap:15px;
+margin-top:30px;
+font-size:20px;
+color:#555;
+">
+
+<div>
+📧 garciaranila.va@gmail.com
+</div>
+
+<div>
+💬 WhatsApp: 09947250160
+</div>
+
+</div>
 
 </div>
 

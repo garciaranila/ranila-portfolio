@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ranila Garcia Portfolio</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      background:#0b0f0c;
+      color:white;
+      line-height:1.6;
+    }
+
+    header{
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:40px;
+      background:linear-gradient(to right,#08120b,#0d1d12);
+    }
+
+    .hero{
+      max-width:1200px;
+      width:100%;
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:50px;
+      align-items:center;
+    }
+
+    .hero-text h4{
+      color:#86c26b;
+      letter-spacing:4px;
+      margin-bottom:20px;
+    }
+
+    .hero-text h1{
+      font-size:70px;
+      line-height:1.1;
+      margin-bottom:20px;
+    }
+
+    .hero-text span{
+      color:#86c26b;
+    }
+
+    .hero-text p{
+      color:#cfcfcf;
+      margin-bottom:30px;
+      font-size:18px;
+    }
+
+    .buttons{
+      display:flex;
+      gap:20px;
+      flex-wrap:wrap;
+    }
+
+    .btn{
+      padding:15px 35px;
+      border:none;
+      border-radius:12px;
+      font-size:16px;
+      cursor:pointer;
+      transition:0.3s;
+    }
+
+    .btn-primary{
+      background:#86c26b;
+      color:black;
+      font-weight:bold;
+    }
+
+    .btn-primary:hover{
+      background:#9dd680;
+    }
+
+    .btn-outline{
+      background:transparent;
+      border:1px solid #86c26b;
+      color:white;
+    }
+
+    .hero-card{
+      background:#111814;
+      border:1px solid #1f2a23;
+      border-radius:30px;
+      padding:50px;
+      text-align:center;
+    }
+
+    .hero-card img{
+      width:180px;
+      height:180px;
+      border-radius:50%;
+      object-fit:cover;
+      margin-bottom:20px;
+      border:5px solid #86c26b;
+    }
+
+    section{
+      padding:100px 40px;
+    }
+
+    .container{
+      max-width:1200px;
+      margin:auto;
+    }
+
+    .title{
+      text-align:center;
+      margin-bottom:60px;
+    }
+
+    .title h2{
+      font-size:50px;
+      margin-bottom:10px;
+    }
+
+    .title p{
+      color:#86c26b;
+      letter-spacing:3px;
+    }
+
+    .services{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:30px;
+    }
+
+    .card{
+      background:#111814;
+      padding:40px;
+      border-radius:25px;
+      border:1px solid #1f2a23;
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-10px);
+      border-color:#86c26b;
+    }
+
+    .card h3{
+      margin:20px 0;
+      font-size:28px;
+    }
+
+    .card p{
+      color:#cfcfcf;
+    }
+
+    .skills{
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      gap:20px;
+    }
+
+    .skill{
+      background:#111814;
+      padding:15px 25px;
+      border-radius:15px;
+      border:1px solid #1f2a23;
+    }
+
+    .about{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:50px;
+      align-items:center;
+    }
+
+    .about img{
+      width:100%;
+      border-radius:30px;
+    }
+
+    footer{
+      padding:40px;
+      text-align:center;
+      border-top:1px solid #1f2a23;
+      color:#cfcfcf;
+    }
+
+    @media(max-width:900px){
+
+      .hero{
+        grid-template-columns:1fr;
+      }
+
+      .about{
+        grid-template-columns:1fr;
+      }
+
+      .hero-text h1{
+        font-size:50px;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+<header>
+
+  <div class="hero">
+
+    <div class="hero-text">
+
+      <h4>VIRTUAL ASSISTANT • CRM MANAGER</h4>
+
+      <h1>
+        Hi, I'm <span>Ranila Garcia</span>
+      </h1>
+
+      <p>
+        I help businesses stay organized through customer support,
+        bookkeeping, CRM management, scheduling,
+        and administrative support.
+      </p>
+
+      <div class="buttons">
+
+        <button class="btn btn-primary">
+          Hire Me
+        </button>
+
+        <button class="btn btn-outline">
+          My Portfolio
+        </button>
+
+      </div>
+
+    </div>
+
+    <div class="hero-card">
+
+      <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=600&auto=format&fit=crop" alt="profile">
+
+      <h2>Ranila Garcia</h2>
+
+      <p>
+        Virtual Assistant • Bookkeeper • Customer Support
+      </p>
+
+    </div>
+
+  </div>
+
+</header>
+
+<section>
+
+  <div class="container">
+
+    <div class="title">
+
+      <p>MY SERVICES</p>
+
+      <h2>What I Can Do</h2>
+
+    </div>
+
+    <div class="services">
+
+      <div class="card">
+
+        <h3>📋 Virtual Assistance</h3>
+
+        <p>
+          Administrative tasks, scheduling,
+          calendar management, and organization.
+        </p>
+
+      </div>
+
+      <div class="card">
+
+        <h3>⚙️ CRM Management</h3>
+
+        <p>
+          GoHighLevel CRM setup,
+          lead follow-ups,
+          pipelines, and automations.
+        </p>
+
+      </div>
+
+      <div class="card">
+
+        <h3>📊 Bookkeeping</h3>
+
+        <p>
+          QuickBooks support,
+          spreadsheets,
+          invoicing, and financial records.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section>
+
+  <div class="container">
+
+    <div class="title">
+
+      <p>TOOLS & SKILLS</p>
+
+      <h2>Software Expertise</h2>
+
+    </div>
+
+    <div class="skills">
+
+      <div class="skill">GoHighLevel</div>
+      <div class="skill">QuickBooks</div>
+      <div class="skill">Microsoft Excel</div>
+      <div class="skill">Google Sheets</div>
+      <div class="skill">Customer Support</div>
+      <div class="skill">Appointment Scheduling</div>
+      <div class="skill">Data Entry</div>
+      <div class="skill">Google Workspace</div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section>
+
+  <div class="container about">
+
+    <div>
+
+      <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1200&auto=format&fit=crop" alt="work">
+
+    </div>
+
+    <div>
+
+      <div class="title" style="text-align:left">
+
+        <p>ABOUT ME</p>
+
+        <h2>Why Work With Me?</h2>
+
+      </div>
+
+      <p style="color:#cfcfcf; margin-bottom:20px;">
+        I am a reliable and detail-oriented Virtual Assistant
+        with experience in customer support,
+        bookkeeping, CRM management,
+        and administrative assistance.
+      </p>
+
+      <p style="color:#cfcfcf;">
+        I am an IT graduate,
+        fast learner,
+        organized,
+        and committed to helping businesses grow.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<footer>
+
+  <h2>Ranila Garcia</h2>
+
+  <p>
+    Virtual Assistant • CRM Manager • Bookkeeping Support
+  </p>
+
+</footer>
+
+</body>
+</html>
